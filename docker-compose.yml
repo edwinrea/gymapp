@@ -13,8 +13,6 @@ services:
       - NODE_ENV=development
       - PORT=3001
       - FRONTEND_URL=https://gym.shutils.com
-    networks:
-      - gymapp-network
     restart: unless-stopped
 
   # Frontend - React + Vite
@@ -26,21 +24,15 @@ services:
       - "8080:3000"
     environment:
       - HOST=0.0.0.0
+      - VITE_API_URL=https://gym.shutils.com
     volumes:
       - .:/app
       - /app/node_modules
       - /app/backend
     depends_on:
       - backend
-    networks:
-      - gymapp-network
     restart: unless-stopped
 
 # Volúmenes para persistir la base de datos
 volumes:
   backend_data:
-
-# Red para comunicación entre servicios
-networks:
-  gymapp-network:
-    driver: bridge
