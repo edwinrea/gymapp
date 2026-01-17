@@ -1114,6 +1114,16 @@ export const ejerciciosService = {
       rutinaCopy.objetivo = objetivo
       rutinaCopy.nivel = nivel
       
+      // Asegurar que la rutina tenga progreso inicializado
+      if (!rutinaCopy.progreso || rutinaCopy.progreso.length !== rutinaCopy.dias.length) {
+        rutinaCopy.progreso = rutinaCopy.dias.map((dia, index) => ({
+          nombreDia: dia.nombre,
+          completado: false,
+          entrenamientos: [],
+          ultimaFecha: null
+        }))
+      }
+      
       return rutinaCopy
     }
 
@@ -1121,6 +1131,16 @@ export const ejerciciosService = {
     const rutinaCopy = JSON.parse(JSON.stringify(template))
     rutinaCopy.objetivo = objetivo
     rutinaCopy.nivel = nivel
+    
+    // Asegurar que la rutina tenga progreso inicializado
+    if (!rutinaCopy.progreso || rutinaCopy.progreso.length !== rutinaCopy.dias.length) {
+      rutinaCopy.progreso = rutinaCopy.dias.map((dia, index) => ({
+        nombreDia: dia.nombre,
+        completado: false,
+        entrenamientos: [],
+        ultimaFecha: null
+      }))
+    }
     
     return rutinaCopy
   },

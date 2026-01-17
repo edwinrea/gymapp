@@ -96,7 +96,7 @@ export default function Rutinas() {
 
       <div className="rutina-dias">
         {rutinaActiva.dias.map((dia, index) => {
-          const progresoDia = rutinaActiva.progreso[index]
+          const progresoDia = rutinaActiva.progreso?.[index] || { completado: false, entrenamientos: [] }
           const completado = progresoDia.completado
 
           return (

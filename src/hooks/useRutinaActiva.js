@@ -12,6 +12,23 @@ export function useRutinaActiva() {
     try {
       setLoading(true)
       const rutina = await rutinasStorageService.obtenerRutinaActiva()
+      
+      // Verificar que la rutina tenga la estructura correcta
+      if (rutina) {
+        // Asegurar que progreso existe y tiene la longitud correcta
+        if (!rutina.progreso || rutina.progreso.length !== rutina.dias.length) {
+          rutina.progreso = rutina.dias.map((dia, index) => ({
+            nombreDia: dia.nombre,
+            completado: false,
+            entrenamientos: [],
+            ultimaFecha: null
+          }))
+          
+          // Guardar la rutina corregida
+          await rutinasStorageService.guardarRutinaActiva(rutina)
+        }
+      }
+      
       setRutinaActiva(rutina)
       
       if (rutina) {
