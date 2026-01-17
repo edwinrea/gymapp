@@ -1,0 +1,70 @@
+.historial {
+  padding-bottom: 2rem;
+}
+
+.historial h2 {
+  margin-bottom: 1.5rem;
+}
+
+.entrenamientos-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.entrenamiento-item {
+  background: var(--bg-primary);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+
+.entrenamiento-item:active {
+  transform: scale(0.98);
+}
+
+.entrenamiento-fecha {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem;
+  border-radius: 8px;
+  text-align: center;
+  min-width: 60px;
+}
+
+.fecha-dia {
+  font-size: 1.5rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.fecha-mes {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  margin-top: 0.25rem;
+}
+
+.entrenamiento-detalle {
+  flex: 1;
+  min-width: 0;
+}
+
+.entrenamiento-resumen {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: var(--text-primary);
+}
+
+.entrenamiento-ejercicios {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

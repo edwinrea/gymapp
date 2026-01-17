@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect fill="#f5f5f5" width="400" height="300"/>
+  <!-- Persona inclinada -->
+  <circle cx="220" cy="100" r="18" fill="#ffdbac"/>
+  <ellipse cx="200" cy="140" rx="35" ry="30" fill="#4f46e5" transform="rotate(-45 200 140)"/>
+  
+  <!-- Barra -->
+  <line x1="120" y1="160" x2="280" y2="160" stroke="#333" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="130" cy="160" r="22" fill="#444"/>
+  <circle cx="270" cy="160" r="22" fill="#444"/>
+  
+  <!-- Brazos jalando barra -->
+  <line x1="190" y1="125" x2="150" y2="155" stroke="#ffdbac" stroke-width="10" stroke-linecap="round"/>
+  <line x1="215" y1="130" x2="240" y2="155" stroke="#ffdbac" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="150" cy="155" r="7" fill="#ffdbac"/>
+  <circle cx="240" cy="155" r="7" fill="#ffdbac"/>
+  
+  <!-- Piernas -->
+  <line x1="175" y1="160" x2="140" y2="210" stroke="#4f46e5" stroke-width="12" stroke-linecap="round"/>
+  <line x1="185" y1="165" x2="160" y2="220" stroke="#4f46e5" stroke-width="12" stroke-linecap="round"/>
+  
+  <!-- Suelo -->
+  <line x1="50" y1="230" x2="350" y2="230" stroke="#999" stroke-width="2"/>
+  
+  <text x="200" y="270" font-family="Arial" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Remo con Barra</text>
+</svg>

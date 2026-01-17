@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="400" height="300">
+  <rect fill="#f5f5f5" width="400" height="300"/>
+  <!-- Banco -->
+  <rect x="100" y="180" width="200" height="15" fill="#8B4513" rx="3"/>
+  <rect x="110" y="195" width="10" height="40" fill="#654321"/>
+  <rect x="280" y="195" width="10" height="40" fill="#654321"/>
+  
+  <!-- Persona acostada -->
+  <ellipse cx="200" cy="175" rx="35" ry="25" fill="#4f46e5"/>
+  <circle cx="200" cy="155" r="15" fill="#ffdbac"/>
+  
+  <!-- Brazos abiertos (aperturas) -->
+  <line x1="180" y1="165" x2="100" y2="135" stroke="#ffdbac" stroke-width="8" stroke-linecap="round"/>
+  <line x1="220" y1="165" x2="300" y2="135" stroke="#ffdbac" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Mancuernas -->
+  <rect x="90" y="130" width="20" height="10" fill="#333" rx="2"/>
+  <circle cx="90" cy="135" r="8" fill="#444"/>
+  <circle cx="110" cy="135" r="8" fill="#444"/>
+  
+  <rect x="290" y="130" width="20" height="10" fill="#333" rx="2"/>
+  <circle cx="290" cy="135" r="8" fill="#444"/>
+  <circle cx="310" cy="135" r="8" fill="#444"/>
+  
+  <!-- Piernas -->
+  <line x1="180" y1="195" x2="170" y2="230" stroke="#4f46e5" stroke-width="10" stroke-linecap="round"/>
+  <line x1="220" y1="195" x2="230" y2="230" stroke="#4f46e5" stroke-width="10" stroke-linecap="round"/>
+  
+  <text x="200" y="270" font-family="Arial" font-size="20" fill="#333" text-anchor="middle" font-weight="bold">Aperturas con Mancuernas</text>
+</svg>

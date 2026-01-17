@@ -1,0 +1,96 @@
+.migration-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.migration-card {
+  background: var(--bg-primary);
+  border-radius: 12px;
+  padding: 24px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+.migration-card h3 {
+  margin: 0 0 16px 0;
+  color: var(--text-primary);
+  text-align: center;
+}
+
+.migration-card p {
+  color: var(--text-secondary);
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.datos-legacy {
+  background: var(--bg-secondary);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.datos-legacy li {
+  color: var(--text-primary);
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.datos-legacy li:last-child {
+  margin-bottom: 0;
+}
+
+.migration-actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.migration-result {
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.migration-result.success,
+.migration-result .success {
+  background: rgba(76, 175, 80, 0.1);
+  border: 1px solid rgba(76, 175, 80, 0.3);
+}
+
+.migration-result.error,
+.migration-result .error {
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid rgba(244, 67, 54, 0.3);
+}
+
+.migration-result h4 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+.migration-result ul {
+  list-style: none;
+  margin: 0 0 16px 0;
+}
+
+.migration-result li {
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+.btn-small {
+  padding: 8px 16px;
+  font-size: 14px;
+}

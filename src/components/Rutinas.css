@@ -1,0 +1,129 @@
+.rutinas {
+  padding-bottom: 2rem;
+}
+
+.rutina-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.rutina-header h2 {
+  margin: 0;
+}
+
+.progreso-card {
+  background: var(--bg-primary);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  margin-bottom: 1.5rem;
+}
+
+.progreso-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.progreso-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.progreso-porcentaje {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.progreso-bar {
+  height: 12px;
+  background: var(--bg-secondary);
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.progreso-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary), var(--success));
+  border-radius: 6px;
+  transition: width 0.3s ease;
+}
+
+.progreso-stats {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.rutina-dias {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.dia-item {
+  background: var(--bg-primary);
+  padding: 1.25rem;
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform 0.2s;
+  border: 2px solid transparent;
+}
+
+.dia-item:active {
+  transform: scale(0.98);
+}
+
+.dia-item.completado {
+  border-color: var(--success);
+  background: linear-gradient(135deg, var(--bg-primary) 0%, #f0fdf4 100%);
+}
+
+.dia-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.dia-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.dia-ejercicios {
+  font-size: 0.875rem;
+  color: var(--text-secondary);
+}
+
+.check-icon {
+  font-size: 1.5rem;
+  color: var(--success);
+}
+
+.dia-preview {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.ejercicio-tag {
+  background: var(--bg-secondary);
+  padding: 0.25rem 0.75rem;
+  border-radius: 16px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.rutina-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
